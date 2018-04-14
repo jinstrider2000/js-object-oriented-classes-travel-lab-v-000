@@ -26,7 +26,7 @@ class Route {
       return location === this.horizontal;
     }
     const verticalDistanceTravelled = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical);
-    const horizontalDistanceTravelled = Math.abs(Route.eastWest.findIndex(horizontalDistanceCallback.bind(this.beginningLocation)) - Route.eastWest.findIndex(horizontalDistanceCallback.bind(this.endingLocation)));
+    const horizontalDistanceTravelled = Math.abs(Route.eastWest.findIndex(horizontalDistanceCallback,this.beginningLocation) - Route.eastWest.findIndex(horizontalDistanceCallback,this.endingLocation));
     return verticalDistanceTravelled + horizontalDistanceTravelled;
   }
 
