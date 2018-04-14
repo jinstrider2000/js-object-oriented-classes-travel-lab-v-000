@@ -23,7 +23,6 @@ class Route {
 
   blocksTravelled() {
     const horizontalDistanceCallback = function (location) {
-      console.log(location, this.horizontal);
       return location === this.horizontal;
     }
     const verticalDistanceTravelled = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical);
