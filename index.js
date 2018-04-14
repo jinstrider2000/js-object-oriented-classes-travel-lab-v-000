@@ -3,6 +3,10 @@ class Driver {
     this.name = name;
     this.startDate = new Date(startDate);
   }
+
+  yearsExperienceFromBeginningOf(year) {
+    this.startDate.getFullYear() - Number.parseInt(year);
+  }
 }
 
 class Route {
