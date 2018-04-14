@@ -1,4 +1,5 @@
 class Driver {
+  const driverMotto = "I'm a driver and I love it!";
   constructor(name, startDate) {
     this.name = name;
     this.startDate = new Date(startDate);
@@ -11,7 +12,7 @@ class Driver {
 
 class Route {
   constructor(beginningLocation, endingLocation) {
-
+    
   }
 
   blocksTravelled() {
