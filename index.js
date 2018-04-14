@@ -22,7 +22,7 @@ class Route {
   }
 
   blocksTravelled() {
-    const horizontalDistanceCallback = (location) => {
+    const horizontalDistanceCallback = function (location) {
       console.log(location, this.horizontal);
       return location === this.horizontal;
     }
