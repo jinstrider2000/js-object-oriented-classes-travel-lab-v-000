@@ -30,7 +30,11 @@ class Route {
     return verticalDistanceTravelled + horizontalDistanceTravelled;
   }
 
-  estimatedTime() {
-
+  estimatedTime(rushHour) {
+    if (!!rushHour) {
+      return this.blocksTravelled()/3;
+    } else {
+      return this.blocksTravelled()/2;
+    }
   }
 }
